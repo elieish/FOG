@@ -1,0 +1,63 @@
+<?php
+ 
+	 
+	function display(){
+		# Global Variables
+		global $_db;
+		
+		# Get UID
+		$uid															= $_GET['sector'];
+		
+	
+		
+		# Get Listing
+		$query															= "	SELECT
+																				CONCAT(\"<img src='content/files/\",`picture`,\"' width='278' height='169' alt='Placeholder'/></br></br>\")	as '&nbsp;',
+		                                                                        CONCAT(\"<h2>\",`name`,\"</h2>\"),		                                                                        
+		                                                                        CONCAT(\"<p>\",`notes`,\"</p>\"),
+								                                                CONCAT(\"<p>Contact Number:\",`contact`,\"\"),
+								                                                CONCAT(\"Email Address: <a href=''>\",`email`,\"</a>\"),
+								                                                CONCAT(\"Web Site: <a href='http://\",`website`,\"'>\",`website`,\"</a></p></br></br>\")
+								                                              
+																			FROM
+																				`clients`
+																			WHERE
+																				`active` 						= 1
+																			AND
+																			   `sector_id`						= '$uid'
+		
+																			";
+		
+		# Generate HTML
+		$vars															= array(
+																					"listing"		=> paginated_listing($query,$this_page,$prefix,$uid),
+																					"name"			=>$_db->fetch_single("SELECT `name` FROM `sectors` WHERE`uid`='$uid'"),
+																				
+																				);
+		$template														= new Template(dirname(dirname(dirname(__FILE__))) . "/content/pages/client_sectorA.html", $vars);
+		$html															= $template->toString();
+		
+		# Display HTML
+		print $html;
+	}
+
+if (isset($_GET['action'])){
+	$action = $_GET['action'];
+	
+	if ($action == "display"){
+		display();
+	}
+	
+	else {
+		error("Invalid action `$action`.");
+	}
+}
+else {
+	display();
+}
+
+
+
+	
+
+?>

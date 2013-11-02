@@ -1,0 +1,167 @@
+<!-- Content -->
+    <div class='content'>
+        	
+
+		<h1>Export Client Profiles</h1>
+		
+		<div class="row">
+		
+			<div class="col">
+				
+				<a href="?p=clients.php&action=display&sector=1">
+				
+					<h2>Agriculture - Agro-Processed Foods</h2>	
+					
+					<img src="template/img/client_profiles/home_agri.jpg" alt="Placeholder" width="278" height="169"/>
+				
+				</a>
+
+			</div>
+			
+			<div class="col">
+				
+				<a href="?p=clients.php&action=display&sector=2">
+				
+					<h2>Automotive parts</h2>	
+					<br>
+					<img src="template/img/client_profiles/home_auto.jpg" alt="Placeholder" width="278" height="169"/>
+				
+				</a>
+
+			</div>
+			
+			<div class="col">
+				
+				<a href="?p=clients.php&action=display&sector=3">
+				
+					<h2>Chemicals</h2>	
+					<br>
+					<img src="template/img/client_profiles/home_chem.jpg" alt="Placeholder" width="278" height="169"/>
+				
+				</a>
+			
+			</div>
+			
+		</div><!-- /.row -->
+		
+		<div class="row">
+			
+			<div class="col">
+				
+				<a href="?p=clients.php&action=display&sector=4">
+				
+					<h2>Crafts</h2>	
+					
+					<img src="template/img/client_profiles/home_crafts.jpg" alt="Placeholder" width="278" height="169"/>
+				
+				</a>
+				
+			</div>
+			
+			<div class="col">
+				
+				<a href="?p=clients.php&action=display&sector=5">
+				
+					<h2>Fabricated Metals</h2>	
+					
+					<img src="template/img/client_profiles/home_fab_metals.jpg" alt="Placeholder" width="278" height="169"/>
+				
+				</a>
+				
+			</div>
+			
+			<div class="col">
+				
+				<a href="?p=clients.php&action=display&sector=6">
+				
+					<h2>Fashion and Textiles</h2>	
+					
+					<img src="template/img/client_profiles/home_fash_text.jpg" alt="Placeholder" width="278" height="169"/>
+				
+				</a>
+				
+			</div>
+			
+		</div><!-- /.row -->
+		
+		<div class="row">
+		
+			<div class="col">
+				
+				<a href="?p=clients.php&action=display&sector=7">
+				
+					<h2>Footwear</h2>	
+					<br>
+					
+					<img src="template/img/client_profiles/home_footwear.jpg" alt="Placeholder" width="278" height="169"/>
+				
+				</a>
+
+			</div>
+			
+			<div class="col">
+				
+				<a href="?p=clients.php&action=display&sector=8">
+				
+					<h2>Furniture &amp; Household Fittings</h2>	
+					
+					<img src="template/img/client_profiles/home_furniture.jpg" alt="Placeholder" width="278" height="169"/>
+				
+				</a>
+
+			</div>
+			
+			<div class="col">
+				
+				<a href="?p=clients.php&action=display&sector=9">
+				
+					<h2>Giftware &amp; Industries with Export Potential</h2>	
+					
+					<img src="template/img/client_profiles/home_giftware.jpg" alt="Placeholder" width="278" height="169"/>
+				
+				</a>
+			
+			</div>
+			
+		</div><!-- /.row -->
+		
+		<div class="row">
+		
+			<div class="col">
+				
+				<a href="?p=clients.php&action=display&sector=10">
+				
+					<h2>ICT</h2>	
+					
+					<img src="template/img/client_profiles/home_ict.jpg" alt="Placeholder" width="278" height="169"/>
+				
+				</a>
+
+			</div>
+			
+			<div class="col">
+				
+				<a href="?p=clients.php&action=display&sector=11">
+				
+					<h2>Wool &amp; Mohair</h2>	
+					
+					<img src="template/img/client_profiles/home_wool.jpg" alt="Placeholder" width="278" height="169"/>
+				
+				</a>
+
+			</div>
+			
+			<div class="col">
+				
+				</a>
+			
+			</div>
+			
+		</div><!-- /.row -->
+
+		<!-- Clearfix -->
+        <div class='clearfix'></div>
+        <!-- END: Clearfix -->
+        
+    </div>
+    <!-- END: Content -->

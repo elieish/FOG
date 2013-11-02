@@ -1,0 +1,74 @@
+<div class="content-index">
+			<!-- Top -->
+			<div class="top">
+				<!-- Slideshow -->
+				<div class="slides" id="slides">
+					<div class="slides_container" rel="">
+						<!-- Slide 01 -->
+						<div class="slide">
+							<div class="left">
+								<img alt="A group of hands hold a young plant" src="template/img/slideshow/hands.jpg" /></div>
+							<div class="right">
+								<h2>
+									Building together with you</h2>
+								<p>
+									We aim to promote, develop and offer non-financial professional support to small enterprises to ensure their growth and sustainability and, at the same time, promote and re-inculcate the culture of entrepreneurship.</p>
+							</div>
+						</div>
+						<!-- END: Slide 01 --><!-- Slide 02 -->
+						<div class="slide">
+							<div class="left">
+								<img alt="A young black man" src="template/img/slideshow/man.jpg" /></div>
+							<div class="right">
+								<h2>
+									Business Development Services</h2>
+								<p>
+									Advice on compiling business plans, feasibility studies, marketing plans and research, cash flow projections, company profiles, company registration.</p>
+							</div>
+						</div>
+						<!-- END: Slide 02 --></div>
+				</div>
+				<!-- END: Slideshow --></div>
+			<!-- END: Top --><!-- Bottom -->
+			<div class="bottom">
+				<!-- Col1 -->
+				<div class="col1">
+					<!-- Succres Stories -->
+					<h2>
+						Success Stories</h2>
+					<div class="success_stories">
+						<h3>
+							<em>Coming Soon</em></h3>
+						<!--
+                    	<h3>Black Fox Martial Arts</h3>
+						<img src='img/story.png' alt='Story Image' align='left' height='95' />
+                        <p>Ernest Dhlamini believes emotional fitness is as important as physical fitness."I don't teach kung fu just for tournaments but as a way of life' he says. He is the owner of Black Fox Martial Arts School,where he runs regular kung fu, tai chi, taebo and yoga classes, and has a number of other irons in the fire.</p>
+                        <a href='stories.php' class='button'>Read More</a>
+                       --></div>
+				</div>
+				<!-- END: Col1 --><!-- Col2 -->
+				<div class="col2">
+					<!-- Who is SEDA eThekwini -->
+					<h2>
+						Who is SEDA eThekwini</h2>
+					<p>
+						The Thekwini Business Development Centre was established in 1997 after the merger of two institutions involved in small business development in the city,namely the Business Opportunity Centre and Grow Your Business.</p>
+					<p>
+						From the start the TBDC was backed by the eThekwini Municipality as the primary agency engaged in providing support services to the emerging entrepreneurs of the city.</p>
+					<a class="button" href="?p=about.html">Read More</a></div>
+				<!-- END: Col2 --><!-- Col3 -->
+				<div class="col3">
+					<!-- CEO -->
+					<h2>
+						CEO&#39;s Report</h2>
+					<h3>
+						Introduction</h3>
+					<p>
+						The report is in twofold. There is statistical data which reports on performance during the year in question. The second part is what I refer to as the highlights of the year and issues to ponder about, as government and the role players in SMME development.</p>
+					<a class="button" href="?p=report_ceo.html">Read More</a></div>
+				<!-- END: Col3 --></div>
+			<!-- END: Bottom -->
+			<div class="clearfix">
+				&nbsp;</div>
+		</div>
+		<!-- END: index -->

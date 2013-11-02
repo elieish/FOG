@@ -1,0 +1,23 @@
+	<!-- Content -->
+    <div class='content'>
+    	
+    	<h1>{{name}}</h1>
+    	
+    	<div class="breadcrumbs">
+    		
+    		<ul>    			
+    			<li><a href="?p=client_home.html">Export Client Profiles</a></li>    			
+    			<li>> {{name}}</li>
+    		</ul>    		    		
+    		
+    	</div>
+    	
+
+	  {{listing}}
+	    		 
+	    <div class="red">		 
+			<p>NOTE: If you are having trouble contacting a client please call SEDA on 031-308 9900 or send an email to <a href="info@seda-ethekwini.org.za">info@seda-ethekwini.org.za</a></p>
+		</div>
+			    		    
+	</div>
+	<!-- /.content -->

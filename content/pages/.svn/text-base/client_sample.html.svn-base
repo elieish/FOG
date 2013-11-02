@@ -1,0 +1,56 @@
+	<!-- Content -->
+    <div class='content'>
+    	
+    	<h1>{{sector}}</h1>
+    	
+    	<div class="breadcrumbs">
+    		
+    		<ul>    			
+    			<li><a href="?p=client_home.html">Export Client Profiles</a></li>    			
+    			<li>> {{sector}}</li>
+    		</ul>
+    		
+    	</div>
+    	
+    	<div class="row">
+    	
+	    	<div class="col">
+	    		
+	    		<img src="template/img/client_profiles/agri1.jpg" width="278" height="169"  alt="Placeholder"/>
+	    		
+	    		<h2>{{company}}</h2>
+	    		
+	    		<p>{{content}}</p>
+	
+				
+				
+				<p>Contact: Sandile Mkhize<br>
+				Number: 031 - 555 1234<br>
+				Email: <a href="">sandi@email.co.za</a><br>
+				Web: <a href="">www.agrigrow.co.za</a></p>
+	    		
+	    	</div>	
+    	</div><!-- /.row -->
+    		
+    	</div><!-- /.row -->
+
+		<div class="row">
+			
+			<div class="row-pag text-center">
+												
+				<ul>
+					<a class="button" href=""> < </a>
+					<li><a href="">1</a></li>
+					<li><a href="">2</a></li>
+					<li><a href="">3</a></li>
+					<li>...</li>
+					<li><a href="">10</a></li>
+					<a class="button" href="">></a>
+				</ul>
+				
+			</div>
+			
+		</div><!-- /.row -->
+
+	</div>
+	<!-- /.content -->

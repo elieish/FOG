@@ -1,0 +1,84 @@
+/* --------------------------------------------------------
+ * 
+ * CMS Template Style Sheet
+ * 
+ * @author Ralfe Poisson <ralfe@implyit.co.za>
+ * @version 1.0
+ * @copyright Copyright (C) Imply Development 2011
+ * 
+ * -------------------------------------------------------- */
+
+/* ----------------
+ * Product
+ * ---------------- */
+
+.product {
+	position: relative;
+	float: left;
+	width: 120px;
+	height: 230px;
+	margin: 5px;
+	padding: 5px 2px;
+	text-align: center;
+	/* background: #333; */
+	border: 1px solid #fff;
+	
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.product:hover {
+	border-color: #ddd;
+	
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-ms-border-radius: 8px;
+	
+	box-shadow: 0 1px 8px #ccc;
+	-moz-box-shadow: 0 1px 8px #ccc;
+	-webkit-box-shadow: 0 1px 8px #ccc;
+}
+
+.product_img {
+	width: 100px;
+}
+
+.product_name {
+	float: left;
+	display: block;
+	font-size: 16px;
+	font-weight: 300;
+	color: #8d594c;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.product_price {
+	float: left;
+	display: block;
+	font-size: 14px;
+	color: #87af31;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.product .add_to {
+	float: left;
+	position: absolute;
+	bottom: 10px;
+	left: 14px;
+	border: 0px;
+}
+
+/* ----------------
+ * END: Product
+ * ---------------- */
+
+
+/* --------------------------------------------------------
+ * THE END
+ * --------------------------------------------------------

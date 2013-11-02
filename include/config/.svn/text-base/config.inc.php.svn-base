@@ -1,0 +1,41 @@
+<?php
+/**
+ * CMS Templating System
+ * 
+ * @author Ralfe Poisson <ralfe@implyit.co.za>
+ * @version 1.0
+ * @copyright Copyright (C) Imply Development 2011
+ * @package ImplyCMS
+ */
+
+# ==================================================================================
+# CONFIGURATION
+# ==================================================================================
+
+# System Settings
+$_GLOBALS['site_name']													= "Website";
+$_GLOBALS['log_file']													= "/var/log/site.log";
+$_GLOBALS['default_page']												= "home.html";
+$_GLOBALS['admin_email']												= "development@implyit.co.za";
+$_GLOBALS['admin_email']												= "ralfe@implyit.co.za";
+$_GLOBALS['version']													= "0.4";
+$_GLOBALS['max_results']												= 6;
+
+# Database Configuration
+$_GLOBALS['mysql_host']													= "localhost";
+$_GLOBALS['mysql_user']													= "cms_seda";
+$_GLOBALS['mysql_pass']													= "P1SIMaNaGi34Vobay2L4NoPOcuC6t5";
+$_GLOBALS['mysql_db']													= "cms_seda";
+$_GLOBALS['mysql_debug']												= false;
+
+# Modules
+$_GLOBALS['catalogue_enabled']											= true;
+$_GLOBALS['catalogue_menu_label']										= "Catalogue";
+$_GLOBALS['recruitment_enabled']										= true;
+$_GLOBALS['recruitment_jobs_label']										= "Jobs";
+$_GLOBALS['recruitment_candidates_label']								= "Submit CV";
+
+# ==================================================================================
+# THE END
+# ==================================================================================
+?>

@@ -1,0 +1,48 @@
+<!-- Content -->
+		<div class="content">
+			<h1>Sevices we offer</h1>
+        	
+        	<h2>Business Information Services </h2>
+
+            <ul>
+                <li>Daily display of tender notices</li>
+                <li>Business counselling</li>
+                <li>Company registrations &amp; business opportunities</li>
+                <li>Bank loan information</li>
+                <li>Business advice on how to start your business</li>
+                <li>Business directories and signposting</li>
+            </ul>
+			
+            <h2>Business Premises</h2>
+            <p>SEDA eThekwini's 16 000 sq m premises provides emerging businesses affordable and accessible business premises and a good marketing platform.</p>
+             
+            <h2>Tender Awareness &amp; Advice</h2>
+            <p>Contractors and SMMEs get training sessions on tendering, processing and project costing; individual assistance on filling tender documents and government accreditation forms.
+            Internet stations that allow SMMEs access to latest business information, advice, guide and online company registration.</p>
+             
+            <h2>Business Development Services</h2>
+            <p>Advice on compiling business plans, feasibility studies, marketing plans and research, cash flow projections, company profiles, company registration.
+            Budget preparation, market surveys and project management.</p>
+             
+            <h2>Co-Operatives</h2>
+            <p>Co-operative advice and registration.</p>
+             
+            <!-- <h2>Business Linkages</h2>
+            <p>SEDA eThekwini facilitates linkages between big business and SMMes to promote outsourcing partnerships and joint ventures in order to take advantage of government's affirmative procurement policies.</p> -->
+             
+            <!--
+            <h2>Youth Entrepreneurship</h2>
+            <p>SEDA eThekwini is contracted by Umsobomvu Youth Fund to manage and co-ordinate its Voucher Programme throughout KwaZulu-Natal.  The programme enables young entrepreneurs between the ages of 18 - 35 access to otherwise unaffordable technical services such as development of:</p>
+                <ul>
+                    <li>Development of business plans</li>
+                    <li>Market research</li>
+                    <li>Website development</li>
+                    <li>Tendering skills</li>
+                    <li>Product development and turnaround strategy</li>
+                    <li>UYF invests R1,2m a year into this project</li>
+              	</ul>-->
+			<!-- Clearfix -->
+			<div class="clearfix">
+			<!-- END: Clearfix --></div>
+</div>
+<!-- END: Content -->

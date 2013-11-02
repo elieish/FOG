@@ -1,0 +1,469 @@
+<?php
+/**
+ * CMS Templating System
+ * 
+ * @author Ralfe Poisson <ralfe@implyit.co.za>
+ * @version 1.0
+ * @copyright Copyright (C) Imply Development 2011
+ * @package ImplyCMS
+ */
+
+# ==================================================================================
+# SCRIPT SETUP
+# ==================================================================================
+
+# Current Page
+$cur_page																= "?p=clients";
+
+# ==================================================================================
+# DISPLAY FUNCTIONS
+# ==================================================================================
+
+/**
+ * The default function called when the script loads
+ */
+function display(){
+	# Global Variables
+	global $cur_page, $_db;
+	
+	# Get Data
+	$data									= $_db->fetch("	SELECT
+																*
+															FROM
+																`clients`
+															WHERE
+															     `active`=1
+															ORDER BY
+																`name`");
+	
+	# Generate Listing
+	$head									= array("#", "Company Name");
+	$body									= array();
+	foreach ($data as $item) {
+		$body[]								= array(	$item->uid . " <a href='$cur_page&action=delete&id={$item->uid}' class='remove'>x</a>",
+														"<a href='$cur_page&action=clientProfile&id={$item->uid}'>" . $item->name . "</a>"
+													);
+	}
+	$listing								= results_table($head, $body);
+	
+	# Generate HTML
+	$html									= "
+	
+	<div class='content' id='content'>
+	
+		<h2><span class=''></span>Clients</h2>
+				
+		" . button("Add", "$cur_page&action=add") . "
+		
+		<!-- Listing -->
+		{$listing}
+	
+	</div><!-- END: Content -->
+	";
+	
+	# Display HTML
+	print $html;
+}
+
+
+
+function clientProfile() {
+	# Global Variables
+	global $_db, $cur_page, $validator, $_GLOBALS;
+	
+	# Get GET Data
+	$uid																= $validator->validate($_GET['id'], "Integer");
+	
+	# Get Data
+	$item																= $_db->fetch_one("	SELECT
+																								*
+																							FROM
+																								`clients`
+																							WHERE
+																								`uid` = {$uid}
+																							"); 
+	
+	# Get Sector Name
+	$sector_name 														= $_db->get_data("sectors", "name", "uid", $item->sector_id);
+	
+	# Get Image
+	$image																= "";
+	# Default Image
+	#$item->picture														= "no_image.jpg";
+	if (strlen($item->picture)) {
+		$image															= "<img src='../content/files/{$item->picture}'width='278' height='169'/><br /><br />";
+	}
+	
+	
+
+	# Generate HTML
+	$html 																= "
+	
+	<div class='content' id='content'>
+	
+		<h2>{$item->name}</h2>
+		<h3>Sector: <a href='{$cur_page}'>{$sector_name}</a></h3>
+		
+		<table width='100%'>
+			<tr>
+				<td>
+					{$image}
+					
+					<!-- Image Form -->
+					<form id='product_image_form' method='POST' action='{$cur_page}&action=upload_product_photo' enctype='multipart/form-data'> 
+						<input type='hidden' name='product' value='{$uid}' />
+						Upload Product Image<br />
+						<input type='file' name='product_image'  />
+						<br /><br />
+						<input type='submit' value='Upload' />
+					</form><!-- END: Image Form -->
+					
+				</td>
+				<td>
+					" . client_item_form($uid) . "
+				</td>
+			</tr>
+		</table>
+		
+	</div><!-- END: Content -->
+	
+	
+	";
+	
+	# Return HTML
+	print $html;
+}
+
+
+function add() {
+	# Global Variables
+	global $_db, $cur_page, $_GLOBALS;
+	
+	
+	# Generate HTML
+	$html									= "
+	
+	<div class='content' id='content'>
+		
+		<!-- Title -->
+		<h2>New Client</h2>
+		
+		<!-- Form -->
+		" . client_item_form() . "
+		
+		
+	</div><!-- END: Content -->
+	";
+	
+	# Display HTML
+	print $html;
+}
+
+
+
+	function sector_select() {
+	# Global Variables
+	global $_db;
+	
+	# Get Data
+	$query																= "	SELECT
+																				`uid`,
+																				`name`
+																			FROM
+																				`sectors`
+																			WHERE
+																				`active` = 1
+																			ORDER BY
+																				`name`";
+	$data																= $_db->fetch($query);
+	
+	# Construct Values
+	$values																= array();
+	foreach ($data as $item) {
+		$values[$item->uid]												= $item->name;
+	}
+	
+	# Return Values
+	return $values;
+               }
+
+
+function client_item_form($uid=0) {
+	# Global Variables
+	global $_db, $cur_page, $_GLOBALS;
+	# Get Item
+	$item									= $_db->fetch_one("SELECT * FROM `clients` WHERE `uid` = {$uid}");
+	
+
+	#populate sectors dropdown list
+    $options															= sector_select();
+	
+
+	# Generate HTML
+	$html									= "
+	<form method='POST' action='{$cur_page}&action=saveClient'>
+		<input type='hidden' name='uid' value=\"{$uid}\" />
+		
+		<strong>Choose Sector</strong>
+		" . generate_select("sector", $options, $value) . "</br></br>
+		<strong>Company Name</strong>
+		<br />
+		<input type='text' name='name' value=\"{$item->name}\" />
+		<br /><br />
+		
+		<strong>Description</strong>
+		<br />
+		<textarea name='notes' rows='7' cols='33'>{$item->notes}</textarea>
+		<br /><br />
+		
+		
+		<strong>Contact Number</strong>
+		<br />
+		<input type='text' name='contact' value=\"{$item->contact}\" />
+		<br /><br />
+		
+		<strong>Email Address</strong>
+		<br />
+		<input type='text' name='email' value=\"{$item->email}\" />
+		<br /><br />
+		
+		<strong>Web Site</strong>
+		<br />
+		<input type='text' name='website' value=\"{$item->website}\" />
+		<br /><br />
+		
+		
+		
+		<input type='submit' value='Save' id='page_save' />
+	</form>
+	
+	<!-- START: SCRIPT --->
+	
+				<script>
+				
+		
+					$(document).ready(function() {
+
+						
+					
+						$('#page_save').click(function() {
+	
+							
+	                       alert('Saved')
+							
+							});
+						});
+						
+					
+						
+						
+						
+				
+					
+				</script>
+	
+	
+	<!-- END: SCRIPT --->
+	
+	
+	
+	
+	";
+		
+	# Return HTML
+	return $html;
+}
+
+
+# =========================================================================
+# PROCESSING FUNCTIONS
+# =========================================================================
+
+
+
+function saveClient() {
+	# Global Variables
+	global $_db, $cur_page, $_GLOBALS, $validator;
+	
+	
+	
+	# Get POST Data
+	$uid								= $validator->validate($_POST['uid']		, "Integer");
+	$sector								= $validator->validate($_POST['sector']	, 	  "String");
+	$name								= $validator->validate($_POST['name']		, "String");
+	$notes								= $validator->validate($_POST['notes']		, "String");
+	$contact							= $validator->validate($_POST['contact']	, "String");
+	$email								= $validator->validate($_POST['email']		, "String");
+	$website							= $validator->validate($_POST['website']	, "String");
+	
+	$default								="no_image.jpg";
+	
+	# Get sector uid
+	$sectorid  							= $_db->fetch_single("SELECT `uid`
+		
+																FROM
+																`sectors`
+																WHERE
+																`name`='{$sector}'
+															");
+															
+															
+															
+														  
+		
+	
+	# Insert Into Database
+	if (!$uid) {
+		$uid							= $_db->insert(
+			"clients",
+			array(
+				"datetime"				=> date("Y-m-d H:i:s"),
+				"user"					=> get_user_uid(),
+				"sector_id"				=> $sectorid,
+				"name"					=> $name,
+				"notes"					=> $notes,
+				"picture"				=> $default,
+				"contact"				=> $contact,
+				"email"					=> $email,
+				"website"				=> $website,
+				"active"				=> 1
+			)
+		);
+	}
+	
+	
+	# Update Database
+	$_db->update(
+		"clients",
+		array(
+			"sector_id"					=> $sectorid,
+			"name"						=> $name,
+			"notes"						=> $notes,
+			
+			"contact"					=> $contact,
+			"email"						=> $email,
+			"website"					=> $website,
+			
+		),
+		array(
+			"uid"						=> $uid,
+			
+		)
+	);
+	
+	
+	# Set info message
+	  set_info("Client $name has been saved successfully.");
+		
+	# Redirect
+	  redirect("$cur_page&action=clientProfile&id={$uid}");
+}
+
+function delete() {
+	# Global Variables
+	global $_db, $cur_page, $_GLOBALS, $validator;
+	
+	# Get GET Data
+	$uid								= $validator->validate($_GET['id'], "Integer");
+	
+	# Get Name
+	$clientname							= $_db->fetch_single("SELECT `name`
+																FROM `clients`
+																WHERE `uid` = \"$uid\"");
+	
+	# Delete From Database
+	#$query								= "DELETE FROM `clients`
+	#										WHERE `uid` = \"{$uid}\"";
+	
+	$query								= "UPDATE `clients`
+											SET `active`=0
+											WHERE `uid`=\"{$uid}\"";
+	$_db->query($query);
+	
+	# Set info message
+	set_info("Category $clientname has been deleted successfully.");
+	
+	# Redirect
+	redirect($cur_page);
+}
+
+function upload_product_photo() {
+	# Global Variables
+	global $_db, $cur_page, $validator, $_GLOBALS;
+
+	# Get POST Data
+	$product															= $validator->validate($_POST['product'], "Integer");
+	$file																= $_FILES['product_image'];
+	
+	# Upload File
+	if (isset($file['tmp_name'])) {
+		$file_name														= "p" . $product . "_image" . substr($file['name'], strrpos($file['name'], "."));
+		$dir															= dirname(dirname(dirname(__FILE__))) . DIRECTORY_SEPARATOR . "content" . DIRECTORY_SEPARATOR . "files" . DIRECTORY_SEPARATOR;
+		$destination													= $dir . $file_name;
+		if (!copy($file['tmp_name'], $destination)) {
+			logg("Upload Product Photo: Error. Could not move file from {$file['tmp_name']} to {$destination}.");
+		}
+		else {
+			$_db->update(
+				"clients",
+				array(
+					"picture"											=> $file_name
+				),
+				array(
+					"uid"												=> $product
+				)
+			);
+		}
+	}
+	
+	# Redirect
+	redirect("{$cur_page}&action=clientProfile&id={$product}");
+}
+
+
+
+# =========================================================================
+# ACTION HANDLER
+# =========================================================================
+
+if (isset($_GET['action'])){
+	$action = $_GET['action'];
+	if ($action == "display"){
+		display();
+	}
+	else if ($action == "profile") {
+		profile();
+	}
+	else if ($action == "add") {
+		add();
+	}
+	else if ($action == "save") {
+		save();
+	}
+	else if ($action == "delete") {
+		delete();
+	}
+	else if ($action == "saveClient") {
+		saveClient();
+	}
+	else if ($action == "save_product") {
+		save_product();
+	}
+	else if ($action == "clientProfile") {
+		clientProfile();
+	}
+	else if ($action == "upload_product_photo") {
+		upload_product_photo();
+	}
+	else {
+		error("Invalid action `$action`.");
+	}
+}
+else {
+	display();
+}
+
+# ==================================================================================
+# THE END
+# ==================================================================================
+?>

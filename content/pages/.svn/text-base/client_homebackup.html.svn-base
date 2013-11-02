@@ -1,0 +1,167 @@
+<!-- Content -->
+    <div class='content'>
+        	
+
+		<h1>Export Client Profiles</h1>
+		
+		<div class="row">
+		
+			<div class="col">
+				
+				<a href="{{link}}">
+				
+					<h2>Agriculture - Agro-Processed Foods</h2>	
+					
+					<img src="template/img/client_profiles/home_agri.jpg" alt="Placeholder" width="278" height="169"/>
+				
+				</a>
+
+			</div>
+			
+			<div class="col">
+				
+				<a href="?p=client_sectorA.html">
+				
+					<h2>Automotive parts</h2>	
+					<br>
+					<img src="template/img/client_profiles/home_auto.jpg" alt="Placeholder" width="278" height="169"/>
+				
+				</a>
+
+			</div>
+			
+			<div class="col">
+				
+				<a href="?p=client_sectorA.html">
+				
+					<h2>Chemicals</h2>	
+					<br>
+					<img src="template/img/client_profiles/home_chem.jpg" alt="Placeholder" width="278" height="169"/>
+				
+				</a>
+			
+			</div>
+			
+		</div><!-- /.row -->
+		
+		<div class="row">
+			
+			<div class="col">
+				
+				<a href="?p=client_sectorA.html">
+				
+					<h2>Crafts</h2>	
+					
+					<img src="template/img/client_profiles/home_crafts.jpg" alt="Placeholder" width="278" height="169"/>
+				
+				</a>
+				
+			</div>
+			
+			<div class="col">
+				
+				<a href="?p=client_sectorA.html">
+				
+					<h2>Fabricated Metals</h2>	
+					
+					<img src="template/img/client_profiles/home_fab_metals.jpg" alt="Placeholder" width="278" height="169"/>
+				
+				</a>
+				
+			</div>
+			
+			<div class="col">
+				
+				<a href="?p=client_sectorA.html">
+				
+					<h2>Fashion and Textiles</h2>	
+					
+					<img src="template/img/client_profiles/home_fash_text.jpg" alt="Placeholder" width="278" height="169"/>
+				
+				</a>
+				
+			</div>
+			
+		</div><!-- /.row -->
+		
+		<div class="row">
+		
+			<div class="col">
+				
+				<a href="?p=client_sectorA.html">
+				
+					<h2>Footwear</h2>	
+					<br>
+					
+					<img src="template/img/client_profiles/home_footwear.jpg" alt="Placeholder" width="278" height="169"/>
+				
+				</a>
+
+			</div>
+			
+			<div class="col">
+				
+				<a href="?p=client_sectorA.html">
+				
+					<h2>Furniture &amp; Household Fittings</h2>	
+					
+					<img src="template/img/client_profiles/home_furniture.jpg" alt="Placeholder" width="278" height="169"/>
+				
+				</a>
+
+			</div>
+			
+			<div class="col">
+				
+				<a href="?p=client_sectorA.html">
+				
+					<h2>Giftware &amp; Industries with Export Potential</h2>	
+					
+					<img src="template/img/client_profiles/home_giftware.jpg" alt="Placeholder" width="278" height="169"/>
+				
+				</a>
+			
+			</div>
+			
+		</div><!-- /.row -->
+		
+		<div class="row">
+		
+			<div class="col">
+				
+				<a href="?p=client_sectorA.html">
+				
+					<h2>ICT</h2>	
+					
+					<img src="template/img/client_profiles/home_ict.jpg" alt="Placeholder" width="278" height="169"/>
+				
+				</a>
+
+			</div>
+			
+			<div class="col">
+				
+				<a href="?p=client_sectorA.html">
+				
+					<h2>Wool &amp; Mohair</h2>	
+					
+					<img src="template/img/client_profiles/home_wool.jpg" alt="Placeholder" width="278" height="169"/>
+				
+				</a>
+
+			</div>
+			
+			<div class="col">
+				
+				</a>
+			
+			</div>
+			
+		</div><!-- /.row -->
+
+		<!-- Clearfix -->
+        <div class='clearfix'></div>
+        <!-- END: Clearfix -->
+        
+    </div>
+    <!-- END: Content -->

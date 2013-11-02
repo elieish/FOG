@@ -1,0 +1,86 @@
+<!-- Content -->
+        <div class='content'>
+        	
+            <h1>Contact SEDA eThekwini</h1>
+            
+            <h2>Satellite Offices</h2>
+            
+            <div class='sat_offices'>
+                <h3>Pinetown</h3>
+                <strong>Address</strong><br /> 
+                Suites 1 and 2 <br /> 
+                Total Square Building<br /> 
+                37 Hill Street<br /> 
+                Pinetown<br /> 
+                3601. <br /> 
+                <strong>Telephone:</strong> 031-702 3769 / <strong>Fax:</strong> 031-702 0547  
+            </div>
+            
+			<div class='sat_offices'>
+                <h3>Tongaat</h3>
+                <strong>Address</strong><br />
+                Old Station Building<br />
+                Railway Street<br />
+                Tongaat<br />
+                4399<br />  
+                <strong>Telephone:</strong> 032-944 3814  
+            </div>
+            
+            
+            <div class='sat_offices'>
+            	<!--
+                <h3>Port Shepstone</h3>
+                <strong>Address</strong><br /> 
+                No. 17 Portstone Centre<br />
+                42 - 44 Aiken Street<br />
+                Lot 1170<br /> 
+                <strong>Telephone:</strong> 039-682 3604
+                -->
+            </div>
+            
+            
+            <h2>Company Details</h2>
+            <p>
+                <strong>Name of Company:</strong> SEDA eThekwini<br />
+                <strong>Type of Company:</strong> Association incorporated under Section 21 Registration No. 96 /17276/08<br />
+            </p>
+            
+            <p>  
+            <strong>Company Business:</strong>  Promotion and support of SMME's<br />
+            <strong>Target Market:</strong>  SMME's<br /> 
+            <strong>Year established:</strong>  August 1997<br /> 
+            <strong>Nature of Business:</strong>  SMME development<br /> 
+            <strong>Average clients:</strong> 4 000 monthly<br />
+            </p>
+            
+             
+            <h2>Main Offices</h2>
+            <p>
+            <strong>Physical Address</strong><br />
+            127 Johannes Nkosi (previously, Alice) Street <br />
+            Durban<br />
+            4001<br />
+            <br />
+            <strong>Postal Address</strong><br />
+            PO Box 623<br />
+            Durban<br />
+            4000<br /><br />
+            <strong>Telephone:</strong>  031-308 9900<br /> 
+            <strong>Fax:</strong>  031-309 5437<br />
+            <br />
+            <a href='mailto:info@seda-ethekwini.org.za' class='button'><img src='template/img/mail.png' align='absmiddle'/>Email Us</a>
+            </p>
+            
+            <h3>Google Maps</h3>
+            <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=127+Johannes+Nkosi+Street,+Durban&amp;sll=37.0625,-95.677068&amp;sspn=59.769082,135.263672&amp;ie=UTF8&amp;hq=127+Johannes+Nkosi+Street,&amp;hnear=Durban,+Durban+Metro,+KwaZulu-Natal,+South+Africa&amp;t=m&amp;ll=-29.853925,31.0129&amp;spn=0.008692,0.032298&amp;output=embed"></iframe><br />
+
+            
+            
+
+
+			<!-- Clearfix -->
+            <div class='clearfix'></div>
+            <!-- END: Clearfix -->
+            
+        </div>
+        <!-- END: Content -->

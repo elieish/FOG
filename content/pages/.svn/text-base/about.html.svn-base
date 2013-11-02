@@ -1,0 +1,102 @@
+<div class="content">
+			<a name="top"></a>
+			<h1>
+				About SEDA eThekwini</h1>
+			<h3>
+				About</h3>
+			<ol>
+				<li>
+					<a href="#company_profile">Company Profile</a></li>
+				<li>
+					<a href="#stakehliders">Stakeholders</a></li>
+				<li>
+					<a href="#clients_needs">Clients Needs</a></li>
+			</ol>
+			<h3>
+				Strategic Mission</h3>
+			<ol>
+				<li>
+					<a href="#vision">Vision</a></li>
+				<li>
+					<a href="#mission">Mission</a></li>
+				<li>
+					<a href="#values">Values</a></li>
+			</ol>
+			<a name="company_profile"></a>
+			<h2>Company Profile</h2>
+            <!--
+            <a href='files/CompanyProfile.pdf' class='button'><img src='img/down.png'align='absmiddle' />Download the SEDA Company Profile</a>
+            -->
+            <p>The Thekwini Business Development Centre was established in 1997 after the merger of two institutions involved in small business development in the city, namely the Business Opportunity Centre and Grow Your Business.</p>
+            <p>From the start the TBDC was backed by the eThekwini Municipality as the primary agency engaged in providing support  services to the emerging entrepreneurs of the city. These services included advice, business planning and tender assistance, training and mentorship. The TBDC's first chairman was eThekwini Mayor, Obed Mlaba, who took a personal interest in the functioning of the TBDC.</p>
+            <p>A number of corporates have also provided financial backing and support for the TBDC over the years,the most prominent being Toyota, McCarthy Auto Holdings, Shepstone &amp; Wylie, Standard Bank, Absa Bank, Nedbank, Group 5, BP and Shell.</p>
+            <p>A highly successful aspect of TBDC's function has been the provision of business premises within the complex at Warwick Junction. A number of businesses have started out in this small business 'hive', some of which have since moved into bigger premises in and around the city.</p>
+            <!--
+            <p>The TBDC was accredited as a local business service centre and tender advice agency of Ntsika, the Department of Trade and Industry's small business arm.In 2003 TBDC won the tender to run the Umsobomvu Youth Fund Voucher Programme in KwaZulu-Natal,which is designed to assist young aspiring entrepreneurs to access professional business services.</p>
+            -->
+            <p>A notable success of the TBDC is the role the centre played as the Black Empowerment agent for the construction of the Sun Coast Casino and uShaka Marine World. TBDC was engaged to ensure meaningful participation by black empowerment companies in these high profile projects.
+            <p>TBDC was the first institution to bravely expose BEE 'fronting' where, in some instances, maids were declared to be company directors without their knowledge.</p>
+            <p>Due to the increasing demand for its services, the TBDC has established two satellite centres at Tongaat and Pinetown to provide entrepreneurs with better access to services.</p>
+            <a href='#top' class='button'><img src='template/img/top.png' align='absmiddle' />back to the top</a>
+            
+            <a name='stakehliders'></a>
+            <h2>Stakeholders </h2>
+			<p>The key stakeholders involved in the SEDA eThekwini are:</p>
+            <ul>
+                <li>eThekwini Municipality</li> 
+                <li>SEDA National and Provincial</li> 
+                <li>Durban Corporates - local companies</li>  
+                <li>Financial Institutions including banks</li>
+                <li>SMME sector</li> 
+                <li>Parastatal Institutions</li>  
+                <li>Universities and other tertiary institutions </li>
+                <li>Consulting Firms</li>
+            </ul>
+            
+            <a href='#top' class='button'><img src='template/img/top.png' align='absmiddle' />back to the top</a>
+			
+            <a name='clients_needs'></a>
+            <h2>Client's Needs</h2>
+            <p>The primary needs of the clients visiting the centre are:</p>
+            <ul>
+                <li>Looking for business and tender opportunities</li>
+                <li>Having business ideas but looking for advice and guidance</li>
+                <li>Company registrations</li>
+                <li>Legal advice</li>
+                <li>Business management and co-op training</li>
+                <li>Tender awareness, pricing and costing</li>
+                <li>Professional support and mentorship</li>
+                <li>Affordable business premises</li>
+                <li>Finance</li>
+			</ul>
+            
+            <h1>Strategic Mission</h1>
+            
+            <a name='vision'></a>
+			<h2>Vision </h2>
+			<p><strong><em>To be the centre of excellence for small enterprise developoment in the Durban region and KwaZulu Natal</em></strong></p>
+ 			<a href='#top' class='button'><img src='template/img/top.png' align='absmiddle' />back to the top</a>
+            
+            <a name='mission'></a>
+			<h2>Mission</h2>
+			<p>To promote, develop and offer non-financial professional support to small enterprises to ensure their growth and sustainability and, at the same time, promote and re-inculcate the culture of entrepreneurship.</p>
+            <a href='#top' class='button'><img src='template/img/top.png' align='absmiddle' />back to the top</a>
+            
+			<a name='values'></a>
+            <h2>Values</h2>
+            <p>The members, management and personnel of the SEDA eThekwini subscribe and commit themselves to the following values:</p> 
+                <ul>
+                    <li>To respect the rights of all clients, tenants and employees</li>
+                    <li>To never breach the confidentiality of a client</li>
+                    <li>To respect clients expectation of a professional service</li>
+                    <li>To operate in a non-discriminatory and non-partisan manner</li>
+                    <li>To strive to provide an excellent service at all times to clients and tenants</li>
+                    <li>To promote transparency and avoid favoritism, corruption and conflict of interest</li>
+                    <li>To operate in a manner that will reflect our integrity and honesty</li>
+                    <li>To be committed to the empowerment of the disadvantaged people of the region</li>
+                </ul>
+            
+			<a class="button" href="#top"><img align="absmiddle" src="template/img/top.png" />back to the top</a>
+			<div class="clearfix"></div>
+		</div>
+		<!-- END: Content -->

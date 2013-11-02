@@ -1,0 +1,618 @@
+@charset "utf-8";
+
+/* SEDA eThekwini
+ * Author: Gregory Evans <grege@implyit.co.za>
+ * Created: 19/07/2011
+ * Last Modified: XX by XX
+ */
+ 
+/* ----------------------
+ * Wrapper
+ * ---------------------- */
+
+.wrapper {
+	width: 1024px;
+	height: auto;
+	margin: 0 auto 32px;
+	border: 1px solid #666;
+	border-top: none;
+}
+
+/* ----------------------
+ * END: Wrapper
+ * ---------------------- */
+
+/* ----------------------
+ * Header
+ * ---------------------- */
+
+.header {
+	height: 100px;
+	background: #fff;
+}
+
+.header h3 {
+	font-weight: bold;
+}
+
+.logo {
+	padding: 10px 20px;
+	float: left;
+}
+
+.quick_contact {
+	float: left;
+	color: #4c4c4c;
+	font-size: 12px;
+	padding: 20px;
+}
+
+.quick_contact a {
+	color: #4c4c4c; 
+}
+
+.dti {
+	float: right;
+	padding: 10px 40px;
+}
+
+/* ----------------------
+ * END: Header
+ * ---------------------- */
+ 
+/* ----------------------
+ * Navbar
+ * ---------------------- */ 
+ 
+.nav {
+	float: left;
+	clear: both;
+	background: url(../img/nav_bg.png) repeat-x;
+	border: 1px solid #ed5727;
+	border-left: none;
+	border-right: none;
+	width: 1024px;
+}
+
+.nav ul {
+	width: 1024px;
+}
+
+.nav li {
+	display: inline;
+}
+
+.nav li a {
+	float: left;
+	padding: 9px 10px;
+	color: #fff;
+	font-size: 14px;
+	text-shadow: 0 1px 0 #333;
+	border-right: 1px solid #ed5727;
+	border-left: 1px solid #f88f30;
+}
+
+.nav li:first-child a {
+	border-left: none;
+}
+
+.nav li a:hover {
+	text-decoration: none;
+	background: url(../img/nav_bg_hover.png)
+}
+
+.nav li a:active {
+	padding: 10px 10px 8px;
+}
+ 
+/* ----------------------
+ * END: Navbar
+ * ---------------------- */
+
+/* ----------------------
+ * Content
+ * ---------------------- */
+ 
+.content {
+	clear: both;
+	background: #fff;
+	padding: 32px 40px 64px;
+	background: url(../img/grey_grad.png) repeat-x bottom #fff;
+	/*background: url(../img/bl.jpg);*/
+}
+
+.content-index  {
+	background: url("../img/grey_grad.png") repeat-x scroll center bottom #FFFFFF;
+    clear: both;
+	padding: 0 0 32px;
+}
+
+.content h1 {
+	font-size: 32px;
+	color: #ed5727;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+
+.content h2 {
+	font-size: 18px;
+	color: #ed5727;
+	font-weight: bold;
+	margin-bottom: 18px;
+}
+
+.content h3 {
+	color: #333;
+	font-weight: bold;
+	font-size: 14px;
+	margin-top: 18px;
+	margin-bottom: 2px;
+}
+
+.content h4 {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.content ol a,
+.content li a {
+	color: #000;
+}
+
+.content ol,
+.content ul {
+	margin-left: 18px;
+	margin-bottom: 18px;
+	max-width: 800px;
+}
+
+.content img {
+	margin: 3px 15px 0;
+}
+
+.content strong {
+	color: #222;
+}
+
+.content iframe {
+	border: 1px solid #333;
+	margin-bottom: 32px;
+}
+
+.content-index  h2 {
+	color: #ed5727;
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom: 10px;
+	padding-bottom: 8px;
+	border-bottom:1px solid #999;
+}
+
+.content-index  h3 {
+	font-weight: bold;
+	font-size: 14px;
+	color: #444;
+}
+
+.content p, .content-index p {
+	margin-bottom: 18px;
+}
+
+.button {
+    background: none repeat scroll 0 0 #ED5727;
+    border-radius: 3px 3px 3px 3px;
+    clear: both;
+    color: #FFFFFF;
+    display: inline-block;
+    margin-bottom: 25px;
+    padding: 6px 14px 4px;
+    text-align: center;
+}
+
+.button img {
+	border: none;
+	margin: 0;
+	margin-right: 8px;
+	padding: 0;
+}
+
+.button:hover {
+	background: #f88f30;
+	text-decoration: none;
+}
+
+.red p, .red a {
+	color: #D80000;
+	max-width: 900px;
+	font-weight: bold;
+}
+
+/* ----------------------
+ * END: Content
+ * ---------------------- */ 
+
+/* ----------------------
+ * Footer
+ * ---------------------- */
+ 
+.footer {
+	height: 130px;
+	background: #fff;
+	padding: 20px;
+	border-top: 1px solid #ed5727;
+	color: #444;
+}
+
+.footer h3 {
+	font-weight: bold;
+}
+
+.footer a {
+	color: #444;
+}
+
+.footer .col1 {
+	width: 246px;
+	height: 100%;
+	float: left;
+}
+
+.footer .col1 img {
+	margin-bottom: 9px;
+}
+
+.footer .col2 {
+	width: 246px;
+	height: 100%;
+	float: left;
+}
+
+.footer .col3 {
+	width: 246px;
+	height: 100%;
+	float: left;
+}
+
+.footer .col4 {
+	width: 246px;
+	height: 100%;
+	float: left;
+}
+
+/* ----------------------
+ * END: Footer
+ * ---------------------- */
+ 
+/* ----------------------
+ * Home Page
+ * ---------------------- */
+
+.top {
+	width: 100%;
+	height: 326px;
+	background: url(../img/slider_bg.jpg) repeat-x;
+}
+
+/* Slideshow */
+#slides {
+	position: relative;
+}
+
+.pagination {
+	display: none;
+}
+
+.slides_container {
+	width: 920px;
+	height: 270px;
+	display:none;
+	overflow: hidden;
+	margin: 0 auto;
+	top: 20px;
+	
+	-moz-box-shadow: 0 2px 6px #000;
+	-webkit-box-shadow: 0 2px 6px #000;
+	box-shadow: 0 2px 6px #000;
+}
+
+.slide {
+	width: 920px;
+	height: 270px;
+	color: #000;
+	background: #f88f30;
+	color: #fff;
+	font-weight: bold;
+}
+
+.slide img {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.slide .left {
+	width: 600px;
+	float: left;
+}
+
+.slide .right {
+	width: 280px;
+	float: right;
+	padding: 20px;
+	color: #111;
+}
+
+#slides .slide .right h2 {
+	font-size: 32px;
+	line-height: normal;
+	border-bottom: none;
+	color: #fff;
+	text-shadow: 0 1px 0 #000;
+}
+
+#slides .prev,
+#slides .next {
+	display: none;
+}
+
+#slides:hover .prev,
+#slides:hover .next {
+	display: block;
+}
+
+
+.prev {
+	position: absolute;
+	top: 110px;
+	left: 52px;
+	padding: 10px 30px;
+	background: #ed5727;
+	font-size: 14px;
+	color: #fff;
+	opacity: 0.7;
+	z-index: 9999;
+}
+
+.next {
+	position: absolute;
+	top: 110px;
+	right: 52px;
+	padding: 10px 30px;
+	background: #ed5727;
+	font-size: 14px;
+	color: #fff;
+	opacity: 0.7;
+	z-index: 9999;
+}
+
+.prev:hover,
+.next:hover {
+	opacity: 1;
+	text-shadow: 0 1px 0 #002615;
+}
+
+#slides a:hover {
+	text-decoration: none;
+}
+
+.bottom img {
+	margin-left: 0;
+}
+ 
+.bottom .col1 {
+	width: 300px;
+	float: left;
+	padding: 18px 20px;
+}
+
+.bottom .col2 {
+	width: 300px;
+	float: left;
+	padding: 18px 20px;
+}
+
+.bottom .col3 {
+	width: 300px;
+	float: left;
+	padding: 18px 20px;
+}
+
+
+/* ----------------------
+ * END: Home Page
+ * ---------------------- */
+ 
+ /* ----------------------
+ * Export Client Profile
+ * ---------------------- */
+
+.row:before,
+.row:after {
+	clear: both;
+	display: table;
+	content: "";
+	visibility: hidden;
+}
+
+.breadcrumbs ul {
+	margin: 0;
+}
+
+.breadcrumbs li {
+	display: inline;
+	color: #ED5627;
+}
+
+.breadcrumbs li a {
+	color: #909090;
+}
+
+.row .col h2 {
+	margin-top: 10px;
+}
+
+.row .col {
+	padding: 18px 34px;
+    width: 260px;
+    float: left;
+}
+
+.row .col:first-child {
+	padding: 18px 27px 18px 0px;
+}
+
+.row .col a {
+	margin-bottom: 10px;
+}
+
+.row .col a:hover {
+	text-decoration: none;
+}
+
+.row .col a img {
+	opacity: 0.7;
+}
+
+.row .col a:hover img {
+	opacity: 1;
+}
+
+.row .col img,
+.row .col img a {
+	border: 1px solid #C5C5C5;
+	margin: 0px;
+}
+
+.row-pag ul {
+	max-width: 100%;
+}
+
+.row-pag li,
+.row-pag li a {
+	color: #ED5727;
+	display: inline;
+	font-size: 16px;
+	padding: 0 1px;
+}
+
+.row-pag .button {
+	color: #FFFFFF;
+	margin: 0 14px;
+	font-size: 16px;
+}
+
+/* Table */
+
+.table {
+	margin-top: 20px;
+	width: 982px;
+}
+
+.table img {
+	margin: 0px;
+}
+
+.table p {
+	width: 278px;
+}
+
+/* ----------------------
+ * END: Export Client Profile
+ * ---------------------- */
+ 
+/* ----------------------
+ * Contact SEDA
+ * ---------------------- */
+
+.sat_offices {
+	width: 300px;
+	height: 200px;
+	float: left;
+}
+
+/* ----------------------
+ * END: Contact SEDA
+ * ---------------------- */
+
+/* ----------------------
+ * Story
+ * ---------------------- */
+.story {
+	width: 100%;
+	height: auto;
+	float: left;
+	border-top: 1px solid #ccc;
+	padding-top: 32px;
+}
+
+/* ----------------------
+ * END: Story
+ * ---------------------- */
+
+/* ----------------------
+ * Directors Dinner
+ * ---------------------- */
+.director_photos {
+	width: 600px;
+}
+
+.director_photos h1 {
+	margin-top: 40px;
+}
+
+.director_photos img {
+	margin: 0;
+	padding: 0;
+}
+
+.director_photos_description {
+	float: left;
+	font-style: italic;
+	font-weight: bold;
+	color: #555;
+	margin-bottom: 30px;
+}
+
+
+
+div.pagination {
+	padding: 3px;
+	margin: 3px;
+}
+
+div.pagination a {
+	padding: 2px 5px 2px 5px;
+	margin: 2px;
+	border: 1px solid #AAAADD;
+	
+	text-decoration: none; /* no underline */
+	color: #000099;
+}
+div.pagination a:hover, div.pagination a:active {
+	border: 1px solid #000099;
+
+	color: #000;
+}
+div.pagination span.current {
+	padding: 2px 5px 2px 5px;
+	margin: 2px;
+		border: 1px solid #000099;
+		
+		font-weight: bold;
+		background-color: #000099;
+		color: #FFF;
+	}
+	div.pagination span.disabled {
+		padding: 2px 5px 2px 5px;
+		margin: 2px;
+		border: 1px solid #EEE;
+	
+		color: #DDD;
+	}
+
+
+
+/* ----------------------
+ * END: Directors Dinner
+ * ---------------------- */
+

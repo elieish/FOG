@@ -1,0 +1,64 @@
+
+<!-- multistep form -->
+<form id="msform">
+	<!-- progressbar -->
+	<ul id="progressbar">
+		<li class="active">Personal Details</li>
+		<li>Spouse's Details</li>
+		<li>Contact Details</li>
+		<li>Children/Dependants</li>	
+	</ul>
+	<!-- fieldsets -->
+	<fieldset>
+		<h2 class="fs-title">PERSONAL DETAILS</h2>
+		<h3 class="fs-subtitle">This is step 1</h3>
+		<input type="text" id="Surname" placeholder="Surname" />
+		<input type="text" id="Name" placeholder="Name" />
+		<input type="text" id="Dateofbirth" placeholder="Date of Birth" />
+		<input type="text" id="Telephonework" placeholder="Telephone Work" />
+		<input type="text" id="Cellphone" placeholder="Cellphone" />
+		<input type="text" id="EmailAddress" placeholder="Email Address" />
+		<input type="text" id="Datemarriage" placeholder="Date Marriage" />
+		<input type="button" id="next" class="next action-button" value="Next" />
+	</fieldset>
+	<fieldset>
+		<h2 class="fs-title">SPOUSE'S DETAILS</h2>
+		<h3 class="fs-subtitle">This is step 2</h3>
+		<input type="text" id="Surnamewife" placeholder="Surname" />
+		<input type="text" id="Namewife" placeholder="Name" />
+		<input type="text" id="Dateofbirthwife" placeholder="Date of Birth" />
+		<input type="text" id="Telephoneworkwife" placeholder="Telephone Work" />
+		<input type="text" id="Cellphonewife" placeholder="Cellphone" />
+		<input type="text" id="EmailAddresswife" placeholder="Email Address" />
+		<input type="button" id="previous" class="previous action-button" value="Previous" />
+		<input type="button" id="next" class="next action-button" value="Next" />
+	</fieldset>
+	<fieldset>
+		<h2 class="fs-title">CONTACT DETAILS</h2>
+		<h3 class="fs-subtitle">This is step 3</h3>
+		<textarea id="residential" placeholder="Residential Address"></textarea>
+		<textarea id="postal" placeholder="Postal Address"></textarea>
+		<input type="text" id="emergency" placeholder="Emergency Number" />
+		<input type="button" id="previous" class="previous action-button" value="Previous" />
+		<input type="button" id="next" class="next action-button" value="Next" />
+	</fieldset>
+	<fieldset>
+		<h2 class="fs-title">CHILDREN/DEPENDANTS</h2>
+		<h3 class="fs-subtitle">This is step 4</h3>
+		<input type="text" id="nochildren" placeholder="Number of Children" />
+		<textarea id="address" placeholder="Address"></textarea>
+		<input type="button" id="previous" class="previous action-button" value="Previous" />
+		<input type="button" id="next" class="next action-button" value="Next" />
+	</fieldset>
+	
+	<fieldset>
+		<h2 class="fs-title">ACCOUNT SETUP</h2>
+		<h3 class="fs-subtitle">This is step 5</h3>
+		<input type="password" id="pass" placeholder="Password" />
+		<input type="password" id="cpass" placeholder="Confirm Password" />
+		<input type="button" id="previous" class="previous action-button" value="Previous" />
+		<input type="submit" id="submit" class="submit action-button" value="Submit" />
+	</fieldset>
+</form>
+</body>
+</html>

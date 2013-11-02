@@ -1,0 +1,9 @@
+$(function(){
+	$('#slides').slides({
+		preload: true,
+		play: 3000,
+		pause: 2500,
+		hoverPause: true,
+		effect: 'slide'
+	});
+});

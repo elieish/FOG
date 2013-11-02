@@ -1,0 +1,54 @@
+.page_list {
+	width: 200px;
+	height: auto;
+	margin-right:  20px;
+}
+
+.page_list_header {
+	font-size: 14px;
+	color: #ededed;
+	background: #257DBC;
+	margin-top: 24px;
+	padding: 6px;
+	text-shadow: 0 1px 0 #0f4368;
+}
+
+.page_list_header:first-child {
+	margin-top: 0;
+}
+
+.page_link {
+	cursor: pointer;
+	display: block;	
+	border-bottom: 1px solid #dedede;
+	padding: 6px;
+	color: #666;
+	
+}
+
+.page_link:hover {
+	color: #333;
+	background-color: #ddd;
+}
+
+#page_frame {
+	width: 760px;
+	min-height: 470px;
+	height: 100%;
+	border: 1px solid #cbcbcb;
+	background-color: #fff;
+}
+
+iframe{
+	border: none; 
+}
+
+span.add {
+	float: right;
+	cursor: pointer;	
+	margin-right: 10px;
+}
+
+span.add:hover {
+	font-weight: bold;
+}

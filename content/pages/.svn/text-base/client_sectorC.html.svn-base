@@ -1,0 +1,150 @@
+	<!-- Content -->
+    <div class='content'>
+    	
+    	<h1>Chemicals</h1>
+    	
+    	<div class="breadcrumbs">
+    		
+    		<ul>    			
+    			<li><a href="?p=client_home.html">Export Client Profiles</a></li>    			
+    			<li>> Chemicals</li>
+    		</ul>
+    		
+    	</div>
+    	
+    	<div class="row">
+    	
+	    	<div class="col">
+	    		
+	    		<img src="template/img/ph178.jpg" width="278" height="169"  alt="Placeholder"/>
+	    		
+	    		<h2>Business A</h2>
+	    		
+	    		<p>Business A began in early 1972 and has been supplying reliable goods and products in the food sector.</p>
+	
+				<p>A reliable exporter to numerous locations. You are able to purchase the following goods:</p>
+				
+				<p>Product 1, product 2, product 3, product 4.</p>
+				
+				<p>Contact: 000 - 000 0000<br>
+				Email: <a href="">business@email.co.za</a><br>
+				Web: <a href="">www.businessa.co.za</a></p>
+	    		
+	    	</div>
+	    	
+	    	<div class="col">
+	    		
+	    		<img src="template/img/ph178.jpg" width="278" height="169"  alt="Placeholder"/>
+	    		
+	    		<h2>Business B</h2>
+	    		
+	    		<p>Business B began in early 1972 and has been supplying reliable goods and products in the food sector.</p>
+	
+				<p>A reliable exporter to numerous locations. You are able to purchase the following goods:</p>
+				
+				<p>Product 1, product 2, product 3, product 4.</p>
+				
+				<p>Contact: 000 - 000 0000<br>
+				Email: <a href="">business@email.co.za</a><br>
+				Web: <a href="">www.businessa.co.za</a></p>
+	    		
+	    	</div>
+	    	
+	    	<div class="col">
+	    		
+	    		<img src="template/img/ph178.jpg" width="278" height="169"  alt="Placeholder"/>
+	    		
+	    		<h2>Business C</h2>
+	    		
+	    		<p>Business C began in early 1972 and has been supplying reliable goods and products in the food sector.</p>
+	
+				<p>A reliable exporter to numerous locations. You are able to purchase the following goods:</p>
+				
+				<p>Product 1, product 2, product 3, product 4.</p>
+				
+				<p>Contact: 000 - 000 0000<br>
+				Email: <a href="">business@email.co.za</a><br>
+				Web: <a href="">www.businessa.co.za</a></p>
+	    		
+	    	</div>
+	    	
+    	</div><!-- /.row -->
+    	
+    	<div class="row">
+    	
+    		<div class="col">
+	    		
+	    		<img src="template/img/ph178.jpg" width="278" height="169"  alt="Placeholder"/>
+	    		
+	    		<h2>Business D</h2>
+	    		
+	    		<p>Business D began in early 1972 and has been supplying reliable goods and products in the food sector.</p>
+	
+				<p>A reliable exporter to numerous locations. You are able to purchase the following goods:</p>
+				
+				<p>Product 1, product 2, product 3, product 4.</p>
+				
+				<p>Contact: 000 - 000 0000<br>
+				Email: <a href="">business@email.co.za</a><br>
+				Web: <a href="">www.businessa.co.za</a></p>
+	    		
+	    	</div>
+    	
+	    	<div class="col">
+	    		
+	    		<img src="template/img/ph178.jpg" width="278" height="169"  alt="Placeholder"/>
+	    		
+	    		<h2>Business E</h2>
+	    		
+	    		<p>Business E began in early 1972 and has been supplying reliable goods and products in the food sector.</p>
+	
+				<p>A reliable exporter to numerous locations. You are able to purchase the following goods:</p>
+				
+				<p>Product 1, product 2, product 3, product 4.</p>
+				
+				<p>Contact: 000 - 000 0000<br>
+				Email: <a href="">business@email.co.za</a><br>
+				Web: <a href="">www.businessa.co.za</a></p>
+	    		
+	    	</div>
+	    	
+	    	<div class="col">
+	    		
+	    		<img src="template/img/ph178.jpg" width="278" height="169"  alt="Placeholder"/>
+	    		
+	    		<h2>Business F</h2>
+	    		
+	    		<p>Business F began in early 1972 and has been supplying reliable goods and products in the food sector.</p>
+	
+				<p>A reliable exporter to numerous locations. You are able to purchase the following goods:</p>
+				
+				<p>Product 1, product 2, product 3, product 4.</p>
+				
+				<p>Contact: 000 - 000 0000<br>
+				Email: <a href="">business@email.co.za</a><br>
+				Web: <a href="">www.businessa.co.za</a></p>
+	    		
+	    	</div>	    		    	
+	    	
+    	</div><!-- /.row -->
+
+		<div class="row">
+			
+			<div class="row-pag text-center">
+												
+				<ul>
+					<a class="button" href=""> < </a>
+					<li><a href="">1</a></li>
+					<li><a href="">2</a></li>
+					<li><a href="">3</a></li>
+					<li>...</li>
+					<li><a href="">10</a></li>
+					<a class="button" href="">></a>
+				</ul>
+				
+			</div>
+			
+		</div><!-- /.row -->
+
+	</div>
+	<!-- /.content -->

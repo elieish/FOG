@@ -1,0 +1,143 @@
+/*
+SEDA eThekwini
+Author: Gregory Evans <grege@implyit.co.za>
+Date Created: 18/07/2011
+Last Modified: 18/07/2011
+*/
+
+/* ----------------------
+ * Reset 
+ * Eric Meyer (http://meyerweb.com/eric/tools/css/reset/)
+ * ---------------------- */
+ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+  
+/* ----------------------
+ * END: Reset 
+ * ---------------------- */
+ 
+/* ----------------------
+ * General 
+ * ---------------------- */ 
+ 
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	color: #000;
+	background: #efefef;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a img {
+	border: none;
+}
+
+:focus {
+	outline: 0;	/* remember to define focus styles! */
+}
+
+a[href], 
+input[type='submit'], 
+input[type='image'], 
+label[for], 
+select, button, 
+.pointer {
+	cursor: pointer;
+	cursor: hand; /* IE */
+}
+
+p {
+	max-width: 700px;
+	text-align: left;
+}
+
+strong,
+bold {
+	font-weight: bold;
+}
+
+em,
+i {
+	font-style: italic;
+}
+
+img[alt] {
+	font-size: 10px;
+	font-style: italic;
+	color: #777;
+}
+
+hr {
+	color: #ddd;
+	border-bottom: #ddd;
+	height: 1px;
+	margin-bottom: 18px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+/* ----------------------
+ * END: General 
+ * ---------------------- */  
+
+/* ----------------------
+ * Clearfix 
+ * ---------------------- */
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
+
+.clearfix { 
+	display: inline-block; 
+}
+
+/* Clearfix: start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+/* ----------------------
+ * END: Clearfix 
+ * ---------------------- */

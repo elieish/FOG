@@ -1,0 +1,245 @@
+<?php
+/**
+ * CMS Templating System
+ * 
+ * @author Ralfe Poisson <ralfe@implyit.co.za>
+ * @version 1.0
+ * @copyright Copyright (C) Imply Development 2011
+ * @package ImplyCMS
+ */
+
+# ==================================================================================
+# SCRIPT SETUP
+# ==================================================================================
+
+# Current Page
+$cur_page																= "?p=users";
+
+# ==================================================================================
+# DISPLAY FUNCTIONS
+# ==================================================================================
+
+/**
+ * The default function called when the script loads
+ */
+function display(){
+	# Global Variables
+	global $cur_page, $_db;
+	
+	# Get Data
+	$data									= $_db->fetch("	SELECT
+																*
+															FROM
+																`users`
+															ORDER BY
+																`username`");
+	
+	# Generate Listing
+	$head									= array("#", "Username", "Last Name", "First Name", "Email", "Tel", "Mobile");
+	$body									= array();
+	foreach ($data as $item) {
+		$body[]								= array(	$item->uid . " <a href='$cur_page&action=delete&id={$item->uid}' class='remove'>x</a>",
+														"<a href='$cur_page&action=profile&id={$item->uid}'>" . $item->username . "</a>",
+														$item->last_name,
+														$item->first_name,
+														"<a href='mailto:{$item->email}'>" . $item->email . "</a>",
+														$item->tel,
+														$item->mobile);
+	}
+	$listing								= results_table($head, $body);
+	
+	# Generate HTML
+	$html									= "
+	
+	<div class='content' id='content'>
+	
+		<h2><span class='user'></span>Users </h2>
+				
+		" . button("Add", "$cur_page&action=add") . "
+		
+		<!-- Listing -->
+		{$listing}
+	
+	</div><!-- END: Content -->
+	";
+	
+	# Display HTML
+	print $html;
+}
+
+function profile() {
+	# Global Variables
+	global $_db, $cur_page, $_GLOBALS;
+	
+	# Get GET Data
+	$uid									= $_GET['id'];
+	
+	# Generate HTML
+	$html									= "
+	<!-- Title -->
+	<h2>User Administration</h2>
+	
+	<!-- Form -->
+	" . user_profile($uid) . "
+	";
+	
+	# Display HTML
+	print $html;
+}
+
+function add() {
+	# Global Variables
+	global $_db, $cur_page, $_GLOBALS;
+	
+	# Generate HTML
+	$html									= "
+	<!-- Title -->
+	<h2>New User</h2>
+	
+	<!-- Form -->
+	" . user_form() . "
+	";
+	
+	# Display HTML
+	print $html;
+}
+
+# =========================================================================
+# PROCESSING FUNCTIONS
+# =========================================================================
+
+function save() {
+	# Global Variables
+	global $_db, $cur_page, $_GLOBALS, $validator;
+	
+	# Get POST Data
+	$uid								= $validator->validate($_POST['uid'], "Integer");
+	$username							= $validator->validate($_POST['username'], "AlphaNumeric");
+	$password							= $validator->validate($_POST['password'], "String");
+	$first_name							= $validator->validate($_POST['first_name'], "String");
+	$last_name							= $validator->validate($_POST['last_name'], "String");
+	$email								= $validator->validate($_POST['email'], "Email");
+	$tel								= $validator->validate($_POST['tel'], "String");
+	$mobile								= $validator->validate($_POST['mobile'], "String");
+	$fax								= $validator->validate($_POST['fax'], "String");
+	
+	# Insert Into Database
+	if (!$uid) {
+		$query							= "INSERT INTO `users`
+													(`username`)
+											VALUES  (\"$username\")";
+		$_db->query($query);
+		$uid							= mysql_insert_id();
+	}
+	
+	# Update Database
+	$update_password					= ($password)? "`password` 			= '" . md5($password) . "'," : "";
+	$query								= "UPDATE `users`
+												SET `username`				= \"{$username}\",
+												{$update_password}
+												`first_name`				= \"{$first_name}\",
+												`last_name`					= \"{$last_name}\",
+												`email`						= \"{$email}\",
+												`tel`						= \"{$tel}\",
+												`mobile`					= \"{$mobile}\",
+												`fax`						= \"{$fax}\"
+												WHERE `uid`					= $uid";
+	$_db->query($query);
+	
+	# Set info message
+	set_info("User $username has been saved successfully.");
+	
+	# Redirect
+	redirect("$cur_page&action=profile&id={$uid}");
+}
+
+function delete() {
+	# Global Variables
+	global $_db, $cur_page, $_GLOBALS, $validator;
+	
+	# Get GET Data
+	$uid								= $validator->validate($_GET['id'], "Integer");
+	
+	# Get Name
+	$username							= $_db->fetch_single("SELECT `username`
+																FROM `users`
+																WHERE `uid` = \"$uid\"");
+	
+	# Delete From Database
+	$query								= "DELETE FROM `users`
+											WHERE `uid` = \"{$uid}\"";
+	$_db->query($query);
+	
+	# Set info message
+	set_info("User $username has been deleted successfully.");
+	
+	# Redirect
+	redirect($cur_page);
+}
+
+function save_auths() {
+	# Global Variables
+	global $_db, $cur_page, $_GLOBALS;
+	
+	# Get POST Data
+	$uid								= $_POST['uid'];
+	
+	# Save Auths
+	$_db->query("DELETE FROM `functions_users` WHERE `user` = \"$uid\"");
+	foreach ($_POST as $key => $value) {
+		if (substr($key, 0, 2) == "f_") {
+			# Get Group ID
+			$function_id	= substr($key, 2);
+			
+			# Get Function Code
+			$function		= $_db->fetch_single("SELECT `function` FROM `functions` WHERE `uid` = \"$function_id\"");
+			
+			# Add user to group
+			$query			= "INSERT INTO `functions_users`
+									(`user`, `function`)
+							VALUES  (\"$uid\", \"$function\")";
+			$_db->query($query);
+		}
+	}
+	
+	# Redirect
+	redirect("$cur_page&action=profile&id=$uid");
+}
+
+# =========================================================================
+# ACTION HANDLER
+# =========================================================================
+
+if (isset($_GET['action'])){
+	$action = $_GET['action'];
+	if ($action == "display"){
+		display();
+	}
+	else if ($action == "profile") {
+		profile();
+	}
+	else if ($action == "add") {
+		add();
+	}
+	else if ($action == "save") {
+		save();
+	}
+	else if ($action == "delete") {
+		delete();
+	}
+	else if ($action == "save_auths") {
+		save_auths();
+	}
+	else {
+		error("Invalid action `$action`.");
+	}
+}
+else {
+	display();
+}
+
+# ==================================================================================
+# THE END
+# ==================================================================================
+
+?>

@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{{SITE_NAME}}</title>
+
+<!-- CSS -->
+<link rel='stylesheet' type='text/css' href='template/css/framework.css' />
+<link rel='stylesheet' type='text/css' href='template/css/design.css' />
+
+<!-- Javascript / jQuery -->
+<script src='template/js/jquery.js' type='text/javascript'></script>
+<script src='template/js/slides.jquery.js' type='text/javascript'></script>
+<script src='template/js/slides.js' type='text/javascript'></script>
+        
+<script>
+$(function(){
+	$('#slides').slides({
+		preload: true,
+		generateNextPrev: true
+	});
+});
+</script>
+
+</head>
+
+<body>
+
+	<!-- Wrapper -->
+    <div class='wrapper'>
+    
+    	<!-- Header -->
+        <div class='header'>
+        
+        	<!-- Logo -->
+            <div class='logo'>
+            	<a href='./'><img src='template/img/seda_logo.png' alt='SEDA eThekwini' /></a>
+            </div>
+            <!-- END: Logo -->
+            
+            <!-- Quick Contact -->
+            <div class='quick_contact'>
+            	<strong>Contact Details</strong><br />
+				<strong>Tel:</strong> (031) 308 9900 <br />
+				<strong>Email:</strong> <a href='mailto:info@seda-ethekwini.org'>info@seda-ethekwini.org</a>
+            </div>
+            <!-- END: Quick Contact -->
+            
+            <!-- DTI logo -->
+            <div class='dti'>
+            	<a href='http://www.dti.gov.za/' target='_blank'><img src='template/img/dti_logo.png' alt='DTI' /></a>
+            </div>
+            <!-- END: DTI logo -->
+            
+         </div>
+        <!-- END: Header -->
+        
+        <!-- Nav -->
+				{{MENU}}
+		<!-- END: Nav -->
+        
+		<!-- Navbar -->
+		<!-- <div class='nav'>
+		    <ul>
+		        <li><a href='./'>Home</a></li>
+		        <li><a href='?p=about.html'>About SEDA</a></li>
+		        <li><a href='?p=report_chairman.html'>Chairman's Report</a></li>
+		        <li><a href='?p=report_ceo.html'>CEO's Report</a></li>
+		        <li><a href='?p=services.html'>Services</a></li>
+		        <li><a href='?p=stories.html'>Success Stories</a></li>
+		        <li><a href='?p=programmes.html'>Programmes</a></li> 
+		        <li><a href='?p=directors.html'>Directors</a></li>
+		        <li><a href='?p=contact.html'>Contact SEDA</a></li>
+		    </ul>
+		</div> -->
+		<!-- END: Navbar -->
+        	
+        	{{CONTENT}}
+        	
+        <!-- Footer -->
+        <div class='footer'>
+        
+        	<!-- Col1 -->
+            <div class='col1'>
+            	
+                <!-- Logo and Copyright -->
+               	<a href='./'><img src='template/img/seda_logo.png' alt='SEDA eThekwini' /></a> <br />
+                
+				Copyright SEDA eThekwini © 2011 <br />
+				All Rights Reserved <br />
+				<a href=''>Disclaimer</a>
+                
+            </div>
+            <!-- END: Col1 -->
+            
+            <!-- Col2 -->
+            <div class='col2'>
+            
+            	<!-- Contact Details -->
+                <h3>Contact Details</h3>
+                <p><strong>Address:</strong> 127 Johannes Nkosi<br /> 
+                (Alice) Street Durban, 4001 <br />
+                <strong>Tel:</strong> (031) 308 9900 <br />
+                <strong>Fax:</strong> (031) 309 5437 <br />
+               	<strong>Email:</strong> <a href='mailto:info@seda-ethekwini.org'>info@seda-ethekwini.org</a></p>
+                
+            </div>
+            <!-- END: Col2 -->
+            
+            <!-- Col3 -->
+            <div class='col3'>
+            
+            	<!-- DTI logo -->
+                <a href='http://www.dti.gov.za/' target='_blank'><img src='template/img/dti_logo.png' alt='DTI' /></a>
+                
+            </div>
+            <!-- END: Col3 -->
+            
+            <!-- Col4 -->
+            <div class='col4'>
+            
+            	<!-- Colophon -->
+                <strong>This website has been proudly designed and developed by:</strong> <br />
+                <a href='http://www.implyit.co.za' target='_blank'><img src='template/img/implyit_logo.png' alt='Imply Development' /></a>
+                
+            </div>
+            <!-- END: Col4 -->
+            
+        </div>
+        <!-- END: Footer -->
+        
+    </div>
+    <!-- END: Wrapper -->
+    
+</body>
+</html>
